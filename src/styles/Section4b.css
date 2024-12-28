@@ -1,0 +1,178 @@
+.section4b {
+    border-right: 2px solid #eaeaea;
+    border-bottom: 2px solid #eaeaea;
+    height: 520px;
+    box-sizing: border-box;
+    flex: 3;
+  }
+  
+  .section4b1 {
+    border-bottom: 2px solid #eaeaea;
+  }
+  
+  .section4b1 .detail:last-child::after {
+    content: '';
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    color: #11334E;
+    background-color: #11334E;
+  }
+  
+  .section4b2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .button {
+    display: flex;
+    width: 140px;
+    height: 50px;
+    margin-right: 40px;
+    margin-top: 20px;
+    align-items: center;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .section4b-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    width: 50px;
+    height: 50px;
+  
+  }
+  
+  .grey-bg {
+    background-color: #f0f0f0;
+    color: #6e6e6e;
+  }
+  
+  .pink-bg {
+    background-color: #ffeaea;
+    color: #ff6b6b;
+  }
+  
+  .label {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #171717;
+    white-space: nowrap;
+  }
+  
+  .section4b3 {
+    margin-top: 0;
+  }
+  
+  .section4b3-row {
+    display: flex;
+    gap: 45px;
+  
+  }
+  
+  .section4b3-row-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    margin-right: 25px;
+    margin-top: 20px;
+  }
+  
+  .section4b3-row-column textarea {
+    min-height: 60px;
+    resize: vertical;
+    padding: 10px;
+  }
+  
+  .dropdown::placeholder {
+    color: #A7A7A7;
+    font-size: 16px;
+  }
+  
+  .add-team-member {
+    display: flex;
+    gap: 290px;
+    margin-top: 5px;
+    color: #11334E;
+  }
+  
+  .add-team-member p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .add-team-member span {
+    color: #A7A7A7;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    display: inline-block;
+  }
+  
+  .submit-btn {
+    background-color: #11334E;
+    color: #fff;
+    height: 50px;
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-self: flex-end;
+  }
+  
+
+  
+@media (max-width: 1024px) {
+
+  .section4b {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .section4b2 {
+    gap: 0;
+  }
+
+  .button {
+    margin-right: 15px;
+    flex-direction: column;
+    height: 80px;
+  }
+
+  .section4b3-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .add-team-member {
+    gap: 60px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .section4b3-row-column {
+    width: 90%;
+  }
+
+  .submit-btn {
+    width: 30%;
+  }
+}
