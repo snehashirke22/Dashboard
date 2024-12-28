@@ -1,0 +1,23 @@
+.app{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  transition: margin-left 0.3s ease; 
+}
+
+.main-content.sidebar-open {
+  margin-left: 80px; 
+}
+
+.content {
+  flex: 1;
+top: 0;
+padding-left: 20px;
+background-color: #fff;
+  overflow-y: auto;
+}
